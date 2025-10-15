@@ -1,0 +1,38 @@
+@use 'reset' as *;
+@use 'mixins/mixins' as *;
+@use 'themes/default' as *;
+@use 'variables/base' as *;
+@use 'variables/typography' as *;
+@use 'variables/sizes' as *;
+
+.App {
+  background-color: var(--surface-color);
+}
+
+.Toaster {
+  padding: var(--base-size-12);
+}
+
+.Dashboard {
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.Main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.Page {
+  flex: 1 1 auto;
+  padding: var(--base-size-20);
+  background-color: var(--surface-container-color-lowest);
+  border-radius: var(--border-radius-m);
+}
+
+.Container {
+  max-width: var(--container-width);
+  padding: 0 var(--base-size-12);
+  height: 100%;
+  margin: 0 auto;
+}

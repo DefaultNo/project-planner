@@ -1,0 +1,16 @@
+.SidebarItem {
+  border-radius: var(--border-radius-s);
+  overflow: hidden;
+  transition: background-color .1s ease 0s;
+
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--surface-container-color-highest);
+    }
+  }
+}
+
+.link {
+  display: block;
+  padding: var(--base-size-12) var(--base-size-12);
+}

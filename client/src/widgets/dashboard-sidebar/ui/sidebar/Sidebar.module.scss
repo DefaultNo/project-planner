@@ -1,0 +1,9 @@
+.Sidebar {
+  flex: 0 0 var(--sidebar-width);
+  overflow: hidden;
+  border-right: var(--base-border-variant);
+}
+
+.inner {
+  height: 100%;
+}

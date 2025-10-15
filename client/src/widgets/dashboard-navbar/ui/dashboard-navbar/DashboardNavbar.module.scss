@@ -1,0 +1,10 @@
+.DashboardNavbar {
+  border-bottom: var(--base-border-variant);
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: var(--base-size-12);
+}

@@ -1,0 +1,35 @@
+:root {
+  --container-width: 77.5rem;
+  --sidebar-width: 18.75rem;
+
+  // Icon
+  --icon-size-small: 1.25rem;
+  --icon-size-medium: 1.5rem;
+  --icon-size-large: 1.75rem;
+
+  // Icon Button
+  --icon-button-size-small: 2.25rem;
+  --icon-button-size-medium: 3.5rem;
+  --icon-button-size-large: 4.3125rem;
+
+  // Border Radius
+  --border-radius-xs: 4px;
+  --border-radius-s: 8px;
+  --border-radius-m: 12px;
+  --border-radius-l: 16px;
+  --border-radius-xl: 28px;
+  --border-radius-full: 1000px;
+
+  // Border
+  --base-border: 1px solid var(--outline-color);
+  --base-border-variant: 1px solid var(--outline-color-variant);
+  --base-border-error: 1px solid var(--error-color);
+
+  // Button
+  --button-height-s: 30px;
+  --button-height-m: 36px;
+  --button-height-l: 42px;
+
+  // tasks Page
+  --tasks-grid-template-columns: 62px 1fr 240px 180px 62px;
+}

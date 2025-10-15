@@ -1,0 +1,8 @@
+.header {
+  display: grid;
+  grid-template-columns: 62px 1fr 240px 180px 62px;
+  margin: 0 var(--base-size-8);
+  border-top: var(--base-border-variant);
+  border-bottom: var(--base-border-variant);
+}
+

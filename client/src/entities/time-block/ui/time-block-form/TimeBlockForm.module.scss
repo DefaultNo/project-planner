@@ -1,0 +1,17 @@
+.TimeBlockForm {
+  display: flex;
+  flex-direction: column;
+  gap: var(--base-size-12);
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--base-size-12);
+}
+
+.select {
+  background-color: var(--primary-color-opacity-12);
+  padding: var(--base-size-8);
+  border-radius: var(--border-radius-s);
+}

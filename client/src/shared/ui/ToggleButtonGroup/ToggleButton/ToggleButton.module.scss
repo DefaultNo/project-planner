@@ -1,0 +1,38 @@
+.ToggleButton {
+  color: var(--on-secondary-container-color);
+  font-weight: 500;
+  padding: var(--base-size-8) var(--base-size-16);
+  border: var(--base-border);
+  outline: none;
+  transition: background-color, box-shadow, .2s ease 0s;
+
+  @media (any-hover) {
+    &:not(.selected) {
+      &:hover {
+        box-shadow: 0 0 0 1px var(--primary-color-opacity-48);
+        background-color: var(--primary-color-opacity-12);
+      }
+    }
+  }
+
+  &:focus {
+    box-shadow: 0 0 0 2px var(--primary-color-opacity-60);
+    z-index: 2;
+  }
+
+  &:not(:last-child) {
+    border-right: 0;
+  }
+
+  &:first-child {
+    border-radius: var(--border-radius-full) 0 0 var(--border-radius-full);
+  }
+
+  &:last-child {
+    border-radius: 0 var(--border-radius-full) var(--border-radius-full) 0;
+  }
+}
+
+.selected {
+  background-color: var(--secondary-container-color);
+}

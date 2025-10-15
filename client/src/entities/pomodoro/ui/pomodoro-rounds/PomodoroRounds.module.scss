@@ -1,0 +1,29 @@
+.round {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 4px;
+  border: 2px solid var(--tertiary-color);
+  transition: background-color .2s ease 0s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    transform: translateX(-100%);
+    background-color: var(--tertiary-color);
+    transition: transform .2s ease 0s;
+  }
+}
+
+.completed {
+  &:after {
+    transform: translateX(0);
+  }
+}

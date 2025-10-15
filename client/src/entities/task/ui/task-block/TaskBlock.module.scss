@@ -1,0 +1,20 @@
+.TaskBlock {
+  border: 1px solid transparent;
+  padding: var(--base-size-8);
+}
+
+.dragging {
+  border-radius: var(--border-radius-xs);
+  background-color: var(--surface-container-color-low);
+  border-color: var(--outline-color-variant);
+  transition: border-color, background-color, .2s ease 0s;
+}
+
+.title {
+  padding: var(--base-size-4) 0 var(--base-size-12) 0;
+  border-bottom: var(--base-border-variant);
+}
+
+.rows {
+  padding: var(--base-size-12) 0 0 0;
+}

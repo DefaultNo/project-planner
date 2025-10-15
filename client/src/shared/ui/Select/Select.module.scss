@@ -1,0 +1,26 @@
+.Select {
+  position: relative;
+}
+
+.badge {
+  width: 0.625rem;
+  height: 0.625rem;
+  flex: 0 0 0.625rem;
+  border-radius: var(--border-radius-full);
+}
+
+.list {
+  position: absolute;
+  z-index: 5;
+  top: 100%;
+  left: 0;
+  background-color: var(--surface-container-color-high);
+  border-radius: var(--border-radius-s);
+  padding: var(--base-size-8);
+  box-shadow: var(--base-shadow-1);
+}
+
+.option {
+  justify-content: flex-start;
+  width: 100%;
+}

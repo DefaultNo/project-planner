@@ -1,0 +1,14 @@
+.AuthForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.inner {
+  background-color: var(--surface-container-color);
+  padding: var(--base-size-40) var(--base-size-20);
+  border-radius: var(--border-radius-m);
+}

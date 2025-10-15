@@ -1,0 +1,40 @@
+.TaskRow {
+  border-top: var(--base-border-variant);
+  border-bottom: var(--base-border-variant);
+  border-radius: 4px;
+  transition: background-color .1s ease 0s;
+  position: relative;
+
+  @media (any-hover: hover) {
+    &:not(.completed):hover {
+      background-color: var(--surface-container-color-low);
+    }
+  }
+}
+
+.column {
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  padding: var(--base-size-4) var(--base-size-12);
+  border-right: var(--base-border-variant);
+
+  &:first-child {
+    border-left: var(--base-border-variant);
+  }
+}
+
+.dragging {
+  opacity: 0.5;
+}
+
+.inner {
+  display: grid;
+  align-items: center;
+  grid-template-columns: var(--tasks-grid-template-columns);
+}
+
+.completed {
+  opacity: 0.6;
+  background-color: var(--primary-color-opacity-12);
+}

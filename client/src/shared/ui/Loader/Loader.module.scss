@@ -1,0 +1,46 @@
+.Loader {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  &.start {
+    justify-content: flex-start;
+  }
+
+  &.center {
+    justify-content: center;
+  }
+
+  &.end {
+    justify-content: flex-end;
+  }
+}
+
+.inner {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 3px solid var(--neutral-color);
+    border-radius: 50%;
+    border-color: var(--neutral-color) transparent var(--neutral-color) transparent;
+    animation: rotation .7s linear infinite;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
